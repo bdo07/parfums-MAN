@@ -17,6 +17,13 @@ const LoginForm = () => {
     console.log("Commande soumise :", formData);
   };
 
+
+  const handleClick = () => {
+
+alert("inscrepstion complete !");
+
+  }
+
   return (
     <div className="container">
       <div className="form-container">
@@ -75,7 +82,10 @@ const LoginForm = () => {
               />
             </div>
 
-            <button className="btn" type="submit">Se connecter</button>
+            <button className="btn" type="submit" 
+            
+            onClick={handleClick}
+            >Se connecter</button>
           </form>
         </div>
       </div>
