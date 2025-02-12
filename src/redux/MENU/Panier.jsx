@@ -9,7 +9,6 @@ const Panier = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  // حساب المجموع الكلي
   const totalAmount = cartItems.reduce((total, item) => total + item.prix * item.quantity, 0);
 
   const handleRemoveFromCart = (id) => {
@@ -17,7 +16,7 @@ const Panier = () => {
   };
 
   const handleCheckout = () => {
-    navigate("/checkout");  // يوجه المستخدم إلى صفحة الدفع
+    navigate("/checkout");  
   };
 
   return (

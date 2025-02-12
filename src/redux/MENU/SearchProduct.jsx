@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom"; // تأكد من أنك تستخدم هذا الاستيراد بشكل صحيح
+import { useNavigate } from "react-router-dom"; 
 import './SearchProduct.css';
 
 const SearchProduct = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [hoveredImages, setHoveredImages] = useState({}); // تخزين الصورة الحالية لكل عطر
+  const [hoveredImages, setHoveredImages] = useState({}); 
 
   const womenPerfumes = useSelector((state) => state.tousproduct.womenn);
   const menPerfumes = useSelector((state) => state.tousproduct.men);
@@ -17,7 +17,7 @@ const SearchProduct = () => {
     perfume.description.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  const navigate = useNavigate(); // لاستخدام التوجيه إلى الصفحة الأخرى
+  const navigate = useNavigate(); 
 
   return (
     <div className="container">
@@ -35,7 +35,7 @@ const SearchProduct = () => {
           filteredPerfumes.map((perfume) => (
             <div key={perfume.id} className="perfume-card">
               <img
-                src={hoveredImages[perfume.id] || perfume.image} // عرض الصورة الافتراضية أو الصورة المتغيرة
+                src={hoveredImages[perfume.id] || perfume.image} 
                 alt={perfume.title}
                 className="perfume-image"
                 style={{
@@ -47,11 +47,11 @@ const SearchProduct = () => {
                 }}
                 onMouseOver={() => setHoveredImages(prev => ({
                   ...prev,
-                  [perfume.id]: perfume.imageHover // تغيير الصورة عند تمرير الماوس
+                  [perfume.id]: perfume.imageHover 
                 }))}
                 onMouseOut={() => setHoveredImages(prev => ({
                   ...prev,
-                  [perfume.id]: perfume.image // إعادة الصورة الأصلية
+                  [perfume.id]: perfume.image 
                 }))}
               />
               <h3>{perfume.title}</h3>
@@ -60,7 +60,7 @@ const SearchProduct = () => {
               
               <button
                 className="buy-button"
-                onClick={() => navigate(`/parfum/${perfume.id}`)} // استخدام perfume.id بدلاً من product.id
+                onClick={() => navigate(`/parfum/${perfume.id}`)} 
               >
                 Acheter
               </button>

@@ -1,12 +1,12 @@
 import { useSelector, useDispatch } from "react-redux";
-import { useParams, useNavigate } from "react-router-dom"; // إضافة useNavigate
-import { addToCart } from "./cartSlice.jsx"; // استيراد الإجراء المناسب لإضافة المنتجات للسلة
+import { useParams, useNavigate } from "react-router-dom";
+import { addToCart } from "./cartSlice.jsx"; 
 import "./ParfumDetails.css";
 
 const ParfumDetails = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
-  const navigate = useNavigate(); // استخدام التنقل
+  const navigate = useNavigate(); 
 
   const { womenn, men } = useSelector((state) => state.tousproduct);
   const product = womenn?.find((item) => item.id === parseInt(id)) || men?.find((item) => item.id === parseInt(id));
@@ -15,15 +15,13 @@ const ParfumDetails = () => {
     return <h2>🚨 Produit non trouvé 🚨</h2>;
   }
 
-  // جلب عطور مشابهة
   const relatedProducts = (womenn.includes(product) ? womenn : men)
     .filter((item) => item.id !== product.id)
     .slice(0, 4);
 
-  // دالة لإضافة المنتج إلى السلة والانتقال لصفحة Panier
   const handleAddToCart = () => {
-    dispatch(addToCart(product)); // إرسال المنتج إلى `cartSlice`
-    navigate("/panier"); // الانتقال إلى صفحة Panier
+    dispatch(addToCart(product)); 
+    navigate("/panier"); 
   };
 
   return (

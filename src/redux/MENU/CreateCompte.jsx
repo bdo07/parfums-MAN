@@ -20,12 +20,10 @@ const LoginForm = () => {
   return (
     <div className="container">
       <div className="form-container">
-        {/* Image sur la gauche */}
         <div className="image-container">
           <img src="/public/form/bak.jpeg" alt="Illustration" />
         </div>
 
-        {/* Formulaire */}
         <div className="form-box">
           <h2 className="title">Se Connecter</h2>
           <form onSubmit={handleSubmit} className="form">

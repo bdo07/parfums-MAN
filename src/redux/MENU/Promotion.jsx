@@ -8,7 +8,6 @@ const Promotion = () => {
   const womenPerfumes = useSelector((state) => state.tousproduct.womenn);
   const menPerfumes = useSelector((state) => state.tousproduct.men);
 
-  // اختيار أول 4 عطور فقط من كل فئة
   const selectedWomenPerfumes = womenPerfumes.slice(0, 4);
   const selectedMenPerfumes = menPerfumes.slice(0, 4);
 

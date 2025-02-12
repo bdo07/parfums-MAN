@@ -1,4 +1,3 @@
-/* الحاوية الرئيسية */
 .parfum-details-container {
   max-width: 1000px;
   margin: 40px auto;
@@ -9,7 +8,6 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* ترتيب الصورة على اليسار والمواصفات على اليمين */
 .parfum-details-box {
   display: flex;
   flex-direction: row;
@@ -18,7 +16,6 @@
   padding: 20px;
 }
 
-/* تنسيق الصورة */
 .parfum-image-box {
   flex: 1;
   display: flex;
@@ -33,7 +30,6 @@
   transition: transform 0.3s ease-in-out;
 }
 
-/* تنسيق المواصفات */
 .parfum-info-box {
   flex: 1;
   text-align: left;
@@ -76,7 +72,6 @@
   text-align: center;
 }
 
-/* تصميم زر الشراء في المنتصف */
 .parfum-buy-button {
   display: block;
   margin: 0 auto;
@@ -95,7 +90,6 @@
   transform: translateY(-3px);
 }
 
-/* تنسيق قسم المنتجات المشابهة */
 .parfum-related-products {
   margin-top: 30px;
 }
@@ -113,7 +107,6 @@
   padding-bottom: 10px;
 }
 
-/* تصميم المنتجات المشابهة */
 .parfum-product-card {
   flex: 0 0 auto;
   text-align: center;

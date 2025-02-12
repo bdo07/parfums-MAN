@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom"; // تأكد من أنك تستخدم هذا الاستيراد بشكل صحيح
+import { useNavigate } from "react-router-dom"; 
 import "./ParfumFemme.css";
 
 const ParfumFemme = () => {
-  const { womenn } = useSelector((state) => state.tousproduct); // جلب المنتجات من الـ Redux
-  const [hoveredImage, setHoveredImage] = useState(null); // حالة الصورة عند التمرير
-  const navigate = useNavigate(); // لاستخدام التوجيه إلى الصفحة الأخرى
-
+  const { womenn } = useSelector((state) => state.tousproduct); 
+  const [hoveredImage, setHoveredImage] = useState(null); 
+  const navigate = useNavigate(); 
   
 
   return (
@@ -18,12 +17,11 @@ const ParfumFemme = () => {
           womenn.map((product) => (
             <div key={product.id} className="product-card">
               <img
-                // تغيير الصورة عند التمرير
                 src={hoveredImage === product.id ? product.imageHover : product.image}
                 alt={product.title}
                 className="product-image"
-                onMouseEnter={() => setHoveredImage(product.id)} // تعيين الصورة المعلق عليها
-                onMouseLeave={() => setHoveredImage(null)} // العودة للصورة الأصلية
+                onMouseEnter={() => setHoveredImage(product.id)} 
+                onMouseLeave={() => setHoveredImage(null)} 
               />
               <h3>{product.title}</h3>
               <p>{product.description}</p>
@@ -37,7 +35,7 @@ const ParfumFemme = () => {
             </div>
           ))
         ) : (
-          <p>Aucun produit disponible.</p> // عرض رسالة إذا لم تكن هناك منتجات
+          <p>Aucun produit disponible.</p> 
         )}
       </div>
     </div>

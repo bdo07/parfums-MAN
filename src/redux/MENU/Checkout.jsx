@@ -13,19 +13,19 @@ const Checkout = () => {
     address: "",
   });
 
-  const [showPopup, setShowPopup] = useState(false);  // حالة النافذة المنبثقة
+
+  const [showPopup, setShowPopup] = useState(false);  
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleConfirmOrder = () => {
-    setShowPopup(true);  // عرض النافذة المنبثقة
+    setShowPopup(true);  
   };
 
   const handleCreateAccount = (createAccount) => {
     if (createAccount) {
-      // هنا يمكنك إضافة منطق إنشاء الحساب
      
       navigate("/account");
 
@@ -37,13 +37,11 @@ const Checkout = () => {
    
   };
 
-  // ✅ حساب المجموع الإجمالي للطلب
   const totalPrice = cartItems.reduce((total, item) => total + item.prix * item.quantity, 0);
 
   return (
     <div className="checkout-container">
       
-      {/* 📌 قسم المنتجات على اليسار */}
       <div className="selected-items">
         {cartItems.map((item) => (
           <div key={item.id} className="selected-item">
@@ -54,13 +52,11 @@ const Checkout = () => {
             </div>
           </div>
         ))}
-        {/* ✅ عرض المجموع الإجمالي */}
         <div className="total-price">
           <strong>Total:</strong> {totalPrice} MAD
         </div>
       </div>
 
-      {/* 📌 قسم الإدخال على اليمين */}
       <div className="checkout-form">
 
         <label>Nom:</label>
@@ -80,7 +76,6 @@ const Checkout = () => {
 
 
 
-      {/* 📌 النافذة المنبثقة */}
       {showPopup && (
         <div className="popup">
           <div className="popup-content">

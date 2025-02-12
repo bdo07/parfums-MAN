@@ -10,7 +10,6 @@
     
   }
   
-  /* عنوان الصفحة */
   .title {
     font-size: 36px;
     font-weight: bold;
@@ -19,7 +18,6 @@
     text-align: center;
   }
   
-  /* تصميم صندوق البحث */
   .search-input {
     width: 100%;
     max-width: 500px;
@@ -35,7 +33,7 @@
   }
   
   .search-input:focus {
-    border-color: #de6dd4; /* اللون البرتقالي عند التركيز */
+    border-color: #de6dd4; 
     box-shadow: 0 0 10px rgba(255, 127, 80, 0.5);
   }
   
@@ -47,14 +45,13 @@
   /* تصميم شبكة العطور */
   .perfume-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* الأعمدة المتجاوبة */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
     gap: 20px;
     padding: 20px;
     width: 100%;
     box-sizing: border-box;
   }
   
-  /* تصميم كل بطاقة عطر */
   .perfume-card {
     background-color: #fff;
     padding: 20px;
@@ -98,13 +95,12 @@
   .perfume-price {
     font-size: 16px;
     font-weight: bold;
-    color: #B0B0B0; /* اللون الرمادي */
+    color: #B0B0B0; 
     margin-top: 5px;
     padding-bottom: 17px;
     display: block;
   }
   
-  /* نص لعرض في حال لم يتم العثور على عطور */
   .no-results {
     font-size: 18px;
     color: #666;
@@ -112,7 +108,6 @@
     margin-top: 30px;
   }
   
-  /* تصميم الجداول على الشاشات الصغيرة */
   @media (max-width: 1200px) {
     .perfume-grid {
       grid-template-columns: repeat(3, 1fr);
