@@ -1,0 +1,221 @@
+
+
+
+.checkout-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.selected-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%; /* تخصيص عرض الصور */
+}
+
+.selected-item {
+  display: flex;
+  align-items: center;
+  background: #f8f8f8;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.selected-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 15px; /* لإبعاد الصورة عن النص */
+  border-radius: 5px;
+}
+
+.selected-item-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.selected-item-title {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.selected-item-price {
+  color: #333;
+  font-size: 0.9rem;
+}
+
+/* استايل نموذج الإدخال */
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%; /* تخصيص عرض النموذج */
+}
+
+.checkout-form label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.checkout-form input {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.confirm-button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 5vh;
+}
+
+.confirm-button:hover {
+  background-color: #218838;
+}
+
+
+
+
+
+
+
+
+
+.selected-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.selected-item {
+  display: flex;
+  align-items: center;
+  background: #f8f8f8;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.selected-item-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.selected-item-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.selected-item-title {
+  font-weight: bold;
+}
+
+.selected-item-price {
+  color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* إضافة تنسيق للنافذة المنبثقة */
+.popup {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgba(0, 0, 0, 0.6);
+z-index: 1000;
+animation: fadeIn 0.3s ease-in-out;
+}
+
+/* تأثير fade-in */
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+.popup-content {
+background-color: #fff;
+padding: 30px;
+border-radius: 15px;
+text-align: center;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+width: 80%;
+max-width: 400px;
+transition: transform 0.3s ease-in-out;
+transform: scale(0.95);
+}
+
+.popup-content h2 {
+font-size: 20px;
+color: #333;
+margin-bottom: 20px;
+font-family: 'Arial', sans-serif;
+font-weight: bold;
+}
+
+.popup-content button {
+background-color: #a66fd4; /* زر "نعم" */
+color: white;
+border: none;
+padding: 12px 25px;
+font-size: 18px;
+margin: 10px;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.popup-content button:hover {
+background-color: #c76ddf; /* تغيير اللون عند التمرير */
+}
+
+/* زر "لا" مع لون مميز */
+.popup-content button.cancel {
+background-color: #f44336; /* زر "لا" */
+}
+
+.popup-content button.cancel:hover {
+background-color: #e53935; /* تغيير اللون عند التمرير */
+}
+
+/* تأثير تكبير عند ظهور المحتوى */
+.popup-content.show {
+transform: scale(1);
+}
+
+
+
+
+
+
+

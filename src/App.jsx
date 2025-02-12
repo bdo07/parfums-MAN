@@ -21,12 +21,21 @@ import SearchProduct from './redux/MENU/SearchProduct';
 import Panier from "./redux/MENU/Panier";
 
 
+
+
+import Checkout from "./redux/MENU/Checkout.jsx";
+import ParfumDetails from "./redux/MENU/ParfumDetails"; // Si le fichier est dans redux/MENU/
+
+import ProductList from "./redux/CardParfums/productList.jsx";
+
+
+
+
+
 // importation des file text animation 
 import BlurText from "./redux/AnimationTest/BlurText.jsx";
 
-const handleAnimationComplete = () => {
-  console.log('Animation completed!');
-};
+
 
 export default function App() {
 
@@ -81,7 +90,7 @@ export default function App() {
 
 
 
-      
+
       <Router>
         <div>
           <nav style={styles.navbar}>
@@ -174,11 +183,15 @@ export default function App() {
             <Route path="/parfum-femme" element={<ParfumFemme />} />
             <Route path="/parfum-homme" element={<ParfumHomme />} />
             <Route path="/promotion" element={<Promotion />} />
-
             <Route path="/account" element={<CreateCompte />} />
             <Route path="/search" element={<SearchProduct />} />
             <Route path="/panier" element={<Panier />} />
 
+
+
+
+            <Route path="/parfum/:id" element={<ParfumDetails />} />
+            <Route path="/checkout" element={<Checkout />} />
 
           </Routes>
         </div>
@@ -188,17 +201,19 @@ export default function App() {
 
 
       <div className="App">
-      <BlurText
-  text="PARFUMS AMAN"
-  delay={150}
-  animateBy="words"
-  direction="top"
-  onAnimationComplete={handleAnimationComplete}
-  className="large-text mb-8"
-/>
 
-    </div>
+
+      </div>
+
+
+
+
       <Footer />
+
+
+
+
+
     </>
   );
 }

@@ -11,9 +11,8 @@ const Model = ({ path }) => {
   useFrame(() => {
     if (ref.current) {
       time += 0.005;
-      ref.current.rotation.y += 0.001; // Rotation autour de l'axe Y (autour de lui-même)
-      ref.current.rotation.y += 0.005; // Ajout d'une légère rotation sur l'axe X pour un effet plus dynamique
-   
+      ref.current.rotation.y += 0.001; 
+      ref.current.rotation.y += 0.005;
     }
   });
 

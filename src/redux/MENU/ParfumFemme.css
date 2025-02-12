@@ -1,0 +1,41 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+
+
+.product-image {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.buy-button {
+  padding: 8px 16px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buy-button:hover {
+  background-color: #d35400;
+}
+
+.price {
+  font-weight: bold;
+  color: #d35400;
+}

@@ -1,0 +1,95 @@
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 20vh; 
+  }
+ 
+
+.af {
+    background-color: #f6dfe1; 
+    color: rgb(10, 10, 10); 
+    padding: 12px 24px; 
+    border: 2px solid #e8eaec; 
+    border-radius: 8px; 
+    font-size: 20px; 
+    font-weight: initial; 
+    cursor: pointer; 
+    transition: all 0.3s ease;
+    margin-top: 4vh;
+
+    
+}
+  
+.af:hover {
+  background-color: #f3f3f2; 
+  border-color: #2d2e2e; 
+  transform: scale(1.05);
+}
+  
+.af:focus {
+  outline: none; 
+  box-shadow: 0 0 10px rgba(214, 217, 221, 0.5); 
+}
+
+
+
+
+.buy-button {
+  padding: 8px 16px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+.buy-button:hover {
+  background-color: #d35400;
+}
+
+
+
+
+
+
+
+
+
+
+/* تنسيق الحاوية الأساسية */
+.images-container {
+  display: flex;
+  justify-content: space-between; /* توزيع العناصر على الجانبين */
+  gap: 20px; /* المسافة بين الصور */
+  padding: 20px;
+  align-items: center;
+  height: 80vh;
+}
+
+/* تنسيق كل صورة وزر */
+.image-item {
+  display: flex;
+  flex-direction: column; /* وضع الصور والأزرار بشكل عمودي */
+  align-items: center; /* محاذاة العناصر أفقياً */
+  justify-content: center;
+  text-align: center;
+  width: 100%; /* تحديد عرض كل عنصر */
+}
+
+/* تنسيق الصور */
+.image-item img {
+  width: 400%;
+  max-width: 70vh; /* الحد الأقصى لحجم الصورة */
+  height: auto;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
