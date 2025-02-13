@@ -79,14 +79,14 @@
   font-size: 16px;
   font-weight: bold;
   border-radius: 8px;
-  background: linear-gradient(135deg, #b570dc, #3d3253);
+  background: linear-gradient(135deg, #4e4d4f, #414043);
   color: white;
   border: none;
   transition: 0.3s ease-in-out;
 }
 
 .parfum-buy-button:hover {
-  background: linear-gradient(135deg, #2c1d46, #c890eb);
+  background: linear-gradient(135deg, #26232b, #3f3d41);
   transform: translateY(-3px);
 }
 

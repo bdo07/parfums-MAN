@@ -57,7 +57,7 @@ export default function App() {
     },
     links: {
       display: "flex",
-      gap: "20px",
+      gap: "100px",
     },
     link: {
       textDecoration: "none",
@@ -72,7 +72,7 @@ export default function App() {
     },
     icons: {
       display: "flex",
-      gap: "15px",
+      gap: "25px",
     },
     icon: {
       fontSize: "20px",

@@ -70,20 +70,23 @@ const BlurText = ({
   );
 
   return (
-    <p ref={ref} className={`blur-text ${className}`}>
+    <p ref={ref} className={`blur-text ${className} `} style={{ position: 'absolute',zIndex:1 }}>
       {springs.map((props, index) => (
         <animated.span
           key={index}
           style={{
             ...props,
-            display: 'inline-block',
             willChange: 'transform, filter, opacity',
-            fontSize: '8rem', 
-            lineHeight: '1.5',
+    fontSize: '8rem', 
+    lineHeight: '1.5',
+    zIndex: 1000,
+    display: 'inline-block',
+    position: 'relative',
+    left: '-300px',  // ✅ تحريك النص كثيرًا إلى اليسار
           }}
         >
-          {elements[index] === ' ' ? ' ' : elements[index]}
-          {animateBy === 'words' && index < elements.length - 1 && ' '}
+          {elements[index] === ' ' ? '' : elements[index]}
+          {animateBy === 'words' && index < elements.length - 1 && ''}
         </animated.span>
       ))}
     </p>

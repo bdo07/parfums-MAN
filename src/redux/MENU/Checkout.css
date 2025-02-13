@@ -70,7 +70,7 @@
 .confirm-button {
   margin-top: 20px;
   padding: 10px;
-  background-color: #28a745;
+  background-color: #696969;
   color: white;
   border: none;
   border-radius: 5px;
@@ -79,7 +79,7 @@
 }
 
 .confirm-button:hover {
-  background-color: #218838;
+  background-color: #232723;
 }
 
 
@@ -183,7 +183,7 @@ font-weight: bold;
 }
 
 .popup-content button {
-background-color: #a66fd4; /* زر "نعم" */
+background-color: #767477; /* زر "نعم" */
 color: white;
 border: none;
 padding: 12px 25px;
@@ -195,16 +195,16 @@ transition: background-color 0.3s ease;
 }
 
 .popup-content button:hover {
-background-color: #c76ddf; /* تغيير اللون عند التمرير */
+background-color: #282728; /* تغيير اللون عند التمرير */
 }
 
 /* زر "لا" مع لون مميز */
 .popup-content button.cancel {
-background-color: #f44336; /* زر "لا" */
+background-color: #918e8e; /* زر "لا" */
 }
 
 .popup-content button.cancel:hover {
-background-color: #e53935; /* تغيير اللون عند التمرير */
+background-color: #9a9999; /* تغيير اللون عند التمرير */
 }
 
 /* تأثير تكبير عند ظهور المحتوى */

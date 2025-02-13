@@ -8,40 +8,40 @@ function Footer() {
       <footer class="footer">
         <div class="footer-container">
             <div class="footer-section">
-                <h3>COLORLIB</h3>
-                <p>© 2025</p>
+                <h3 className='h3'>COLORLIB</h3>
+                <p className='h3'>© 2025</p>
             </div>
             <div class="footer-section">
-                <h3>Customers</h3>
+                <h3 className='h3'>Customers</h3>
                 <ul>
                     <li><a href="#">Buyer</a></li>
                     <li><a href="#">Supplier</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h3><span class="dot"></span> Company</h3>
+                <h3 className='h3'><span class="dot"></span> Company</h3>
                 <ul>
-                    <li><a href="#">ACCUEIL</a></li>
-                    <li><a href="#">PARFUM FEMME</a></li>
-                    <li><a href="#">PARFUM HOMME </a></li>
-                    <li><a href="#">PROMOTION</a></li>
+                    <li><a href="/">ACCUEIL</a></li>
+                    <li><a href="/parfum-femme">PARFUM FEMME</a></li>
+                    <li><a href="/parfum-homme">PARFUM HOMME </a></li>
+                    <li><a href="/promotion">PROMOTION</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Further Information</h3>
+                <h3 className='h3'>Further Information</h3>
                 <ul>
                     <li><a href="#">Terms & Conditions</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h3> Follow us</h3>
+                <h3 className='h3'> Follow us</h3>
                 <div class="social-icons">
-                    <a href="#">🌍</a>   
-                    <a href="#">📘</a>   
-                    <a href="#">🐦</a>   
-                    <a href="#">💼</a>   
-                    <a href="#">✈️</a>   
+                    <a href="https://www.google.com">🌍</a>   
+                    <a href="https://www.facebook.com">📘</a>   
+                    <a href="https://www.twitter.com">🐦</a>   
+                    <a href="https://www.linkedin.com">💼</a>   
+                    <a href="https://www.instagram.com">✈️</a>   
                 </div>
             </div>
         </div>

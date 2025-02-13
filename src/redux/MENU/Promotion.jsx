@@ -8,8 +8,8 @@ const Promotion = () => {
   const womenPerfumes = useSelector((state) => state.tousproduct.womenn);
   const menPerfumes = useSelector((state) => state.tousproduct.men);
 
-  const selectedWomenPerfumes = womenPerfumes.slice(0, 4);
-  const selectedMenPerfumes = menPerfumes.slice(0, 4);
+  const selectedWomenPerfumes = womenPerfumes.slice(4, 8);
+  const selectedMenPerfumes = menPerfumes.slice(4, 8);
 
   return (
     <div className="promotion-container">

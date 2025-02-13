@@ -95,7 +95,7 @@
     margin: 20px auto;
     padding: 10px 20px;
     font-size: 1.2rem;
-    background-color: #8742b7;
+    background-color: #3b393d;
     color: white;
     border: none;
     border-radius: 5px;
@@ -103,6 +103,6 @@
   }
   
   .checkout-button:hover {
-    background-color: #261034;
+    background-color: #1d1c1e;
   }
   
