@@ -83,6 +83,8 @@ const BlurText = ({
     display: 'inline-block',
     position: 'relative',
     left: '-300px',  // ✅ تحريك النص كثيرًا إلى اليسار
+    transform: 'translate(-100px, -50px)',
+    top: '-100px',
           }}
         >
           {elements[index] === ' ' ? '' : elements[index]}
