@@ -11,8 +11,8 @@ const Home = () => {
 <div style={{display:"flex",justifyContent:"center",alignItems:"center",height:"100vh",overflow:"hidden"}} >
 
 <BlurText
-          text="PARFUMS            AMAN"
-          delay={150}
+          text="PARFUMS AMAN"
+          delay={1500}
           animateBy="words"
           direction="top"
           onAnimationComplete={handleAnimationComplete}

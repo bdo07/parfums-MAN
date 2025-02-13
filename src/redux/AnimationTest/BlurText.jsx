@@ -80,11 +80,26 @@ const BlurText = ({
     fontSize: '8rem', 
     lineHeight: '1.5',
     zIndex: 1000,
-    display: 'inline-block',
+    display: 'block',
     position: 'relative',
-    left: '-300px',  // ✅ تحريك النص كثيرًا إلى اليسار
+    left: index > 0 ? '-10px' : '-300px',
     transform: 'translate(-100px, -50px)',
-    top: '-100px',
+    top: '-10px',
+
+
+
+ // ✅ تحسين الخط والتنسيق
+ fontFamily: "'Poppins ', serif", // 🔥 جرّب Poppins أو Montserrat أيضًا
+ fontWeight: 'bold',
+ letterSpacing: '2px',
+ textRendering: 'optimizeLegibility',
+ color: 'black', // ✅ لون أنيق يناسب الخلفية الداكنة
+ textShadow: '4px 4px 10px rgba(184, 178, 186, 0.5)', // تأثير ظل رائع
+
+
+
+
+
           }}
         >
           {elements[index] === ' ' ? '' : elements[index]}
